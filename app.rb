@@ -5,14 +5,18 @@ def caesar_cipher(user_msg, factor)
         if letter >= 97 && letter <= 122
             letter += factor
             if letter > 122
-                letter -= 26
+                until letter >= 97 && letter <= 122
+                    letter -= 26 
+                end
                 letter.chr
             end
             letter.chr
         elsif letter >= 65 && letter <= 90
             letter += factor
             if letter > 90
-                letter -= 26
+                until letter >= 65 && letter <= 90
+                    letter -= 26 
+                end
                 letter.chr
             end
             letter.chr
