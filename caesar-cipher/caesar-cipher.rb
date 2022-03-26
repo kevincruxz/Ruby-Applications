@@ -26,10 +26,11 @@ def caesar_cipher(user_msg, factor)
     end
     cipher.join
 end
-
+    
 print "Write your message to encrypt: "
 user_inp_message = gets.chomp
 print "Write your encryption factor: "
 user_factor = gets.chomp.to_i
-
+    
 puts caesar_cipher(user_inp_message, user_factor)
+    
